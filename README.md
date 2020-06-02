@@ -1,5 +1,7 @@
 # Vue.js persian scaffold
+
 #####Features List:
+
 - [x] Light/Dark theme
 - [x] MultiLanguage and rtl support
 - [x] Typescript
@@ -16,7 +18,9 @@
 - [x] `Special Project Conventions (this is a new idea/practice)`
 - [x] `API System` using axios
 - [x] ChangeLog
+
 #####Todo:
+
 - [ ] MultiTheme using JSON
 - [ ] Theme customizer
 - [ ] Using simple icon pack
