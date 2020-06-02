@@ -1,11 +1,11 @@
 <template>
-  <div class="app-layout">
+  <main class="app-layout">
     <button @click="logout" v-if="$store.getters.getFakeLogin.accessToken">
       {{ $t("data.logout.button") }}
     </button>
     <AppMenu :routes="routes.children" />
     <router-view />
-  </div>
+  </main>
 </template>
 
 <script lang="ts">

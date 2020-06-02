@@ -1,4 +1,4 @@
-# vuejs-persian-chat-scaffold
+# vuejs-persian-scaffold
 
 this Scaffold using Typescript,PWA,vuex,vue-router, jest,eslint and prettier, ramda.js
 
