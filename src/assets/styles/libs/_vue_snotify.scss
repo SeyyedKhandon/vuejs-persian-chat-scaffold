@@ -1,0 +1,83 @@
+@import  "~vue-snotify/styles/material.css";
+
+.snotify {
+  transition: all 3s;
+  position: fixed;
+  min-width: 320px;
+  z-index: 4;
+  bottom: 32px;
+  right: 32px;
+  direction: ltr;
+
+  .snotifyToast {
+    background: #84ce95;
+    opacity: 1;
+    position: relative;
+    color: #ffffff;
+    min-height: 48px;
+    padding-right: 0;
+    margin: 5px 0;
+
+    &::before {
+      width: 8px;
+      height: 100%;
+      content: " ";
+      background: rgba(27, 27, 27, 0.2);
+      border-radius: 8px 0px 0px 8px;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after {
+      width: 8px;
+      height: 100%;
+      content: url("assets/images/tick.svg");
+      border-radius: 8px 0px 0px 8px;
+      position: absolute;
+      left: 18px;
+      top: 22px;
+    }
+
+    .snotifyToast__progressBar__percentage,
+    .snotifyToast__progressBar {
+      height: 2px;
+    }
+
+    .snotifyToast__inner {
+      padding: 0 20px 0 0;
+      min-height: unset;
+
+      .snotifyToast__title {
+        font-size: 1em;
+        line-height: 1.2em;
+        color: #fff;
+        position: absolute;
+        right: 15px;
+        top: 11px;
+      }
+
+      .snotifyToast__body {
+        color: white;
+        margin-top: 16px;
+        padding: 10px 16px 16px;
+        display: inline-block;
+        margin-left: 38px;
+        word-break: break-word;
+      }
+
+      .snotify-icon {
+        display: none;
+      }
+    }
+  }
+
+  .snotify-error {
+    background-color: #d8417a;
+
+    &.snotifyToast {
+      &::after {
+        content: url("assets/images/alert-triangle.svg");
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "English",
+    "name": "english",
+    "lang": "en-US",
+    "rtl": false
+  },
+  "data": {
+    "main_menu": {
+      "home": "Home",
+      "about": "About"
+    },
+    "hello_world": {
+      "title": "Welcome to Your Vue.js App",
+      "description": "Vue.js Scaffolding is in progress"
+    },
+    "about": {
+      "info": "This is an about page",
+      "github_users": "Github Users:"
+    },
+    "toastMessages": {
+      "notSavedChanges": {
+        "title": "Unsaved changes",
+        "text": "Want to save your changes?",
+        "confirm": "Yes",
+        "cancel": "No"
+      },
+      "deleteRequest": {
+        "title": "{msg} removal operation",
+        "text": "Are you sure you want to delete a {title} called \"{item_label}\"?",
+        "confirm": "Yes, delete it",
+        "cancel": "No, keep it"
+      },
+      "deleteResponse": {
+        "title": "Delete operations",
+        "confirm": "Ok"
+      }
+    },
+    "defaultAPIErrorMessage": "An unknown network error has occurred.",
+    "login": {
+      "title": "Login page",
+      "hint": "Enter admin/admin for username/password to log-in.",
+      "username": "Enter Username",
+      "password": "Enter Password",
+      "submit": "Sign-in",
+      "errors": {
+        "title": "Please correct the following error(s):",
+        "username": "Username required.",
+        "password": "Password required.",
+        "wrong_username_or_pass": "Username or Password is in-correct."
+      }
+    },
+    "logout": {
+      "button": "Logout"
+    },
+    "menu": {
+      "login": {
+        "title": "Login",
+        "pageTitle": "Login to Persian Vue.js scaffold"
+      },
+      "home": {
+        "title": "Home",
+        "pageTitle": "Persian Vue.js Scaffold"
+      },
+      "about": {
+        "title": "About",
+        "pageTitle": "Persian Vue.js Scaffold - page About"
+      }
+    },
+    "errorPages": {
+      "error404": {
+        "title": "404 page not found",
+        "hint": "click here to go home"
+      },
+      "error403": {
+        "title": "403 Forbidden Access"
+      }
+    }
+  }
+}

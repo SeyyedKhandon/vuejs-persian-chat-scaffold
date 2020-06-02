@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--app-background-color);
+  color: var(--app-text-color);
+  font-size: $default-font-size;
+  font-family: $default-font-family;
+
+}

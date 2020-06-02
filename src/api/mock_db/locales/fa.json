@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "پارسی",
+    "name": "persian",
+    "lang": "fa-IR",
+    "rtl": true
+  },
+  "data": {
+    "main_menu": {
+      "home": "خانه",
+      "about": "درباره ما"
+    },
+    "hello_world": {
+      "title": "به برنامه vuejs خوش آمدید.",
+      "description": "فرآیند ایجاد ساختار در حال پیشرفت است."
+    },
+    "about": {
+      "info": "این صفحه درباره ما است.",
+      "github_users": "لیست کاربران گیت هاب:"
+    },
+    "toastMessages": {
+      "notSavedChanges": {
+        "title": "تغییرات ذخیره نشده",
+        "text": "مایلید تغییراتتان را ذخیره نماییم؟",
+        "confirm": "بله",
+        "cancel": "خیر"
+      },
+      "deleteRequest": {
+        "title": "عملیات حذف {msg}",
+        "text": "آیا از حذف {title} با نام \"{item_label}\" مطمئن هستید؟",
+        "confirm": "بله، حذفش کن",
+        "cancel": "خیر، نگهش دار"
+      },
+      "deleteResponse": {
+        "title": "عملیات حذف",
+        "confirm": "باشه"
+      }
+    },
+    "defaultAPIErrorMessage": "یک خطای غیرمنتظره در شبکه رخ داده است.",
+    "login": {
+      "title":"صفحه احراز هویت",
+      "hint": "جهت ورود از رمزعبور و نام کاربری admin استفاده نمایید.",
+      "username": "نام کاربری را وارد نمایید.",
+      "password": "کلمه عبور را وارد نمایید.",
+      "submit": "ورود",
+      "errors": {
+        "title": "لطفا خطاهای زیر را برطرف نمایید.",
+        "username": "نام کاربری را وارد نمایید.",
+        "password": "کلمه عبور را وارد نمایید.",
+        "wrong_username_or_pass": "اطلاعات نام کاربری یا رمز عبور اشتباه است."
+      }
+    },
+    "logout": {
+      "button": "خروج"
+    },
+    "menu": {
+      "login": {
+        "title": "ورود به سامانه",
+        "pageTitle": "ورود به سامانه ساختار  Vue.js فارسی"
+      },
+      "home": {
+        "title": "خانه",
+        "pageTitle": "ساختار  Vue.js فارسی "
+      },
+      "about": {
+        "title": "درباره ما",
+        "pageTitle": "ساختار   Vue.js فارسی - صفحه درباره ما"
+      }
+    },
+    "errorPages": {
+      "error404": {
+        "title": "صفحه مورد نظر یافت نشد.",
+        "hint": "جهت بازگشت به خانه، کلیک نمایید."
+      },
+      "error403": {
+        "title": "دسترسی به صفحه مورد نظر امکان پذیر نیست."
+      }
+    }
+  }
+}

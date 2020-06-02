@@ -1,0 +1,66 @@
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position(
+  $position: absolute,
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin transition($property: all, $duration: 0.2s, $function: ease-in-out) {
+  transition: #{$property} #{$duration} #{$function};
+}
+
+@mixin colorize($type: bg, $color: white, $alpha: 1) {
+  @if $type==bg {
+    background-color: rgba($color, $alpha);
+  } @else {
+    color: rgba($color, $alpha);
+  }
+}
+
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+@mixin truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin font-face($name, $file) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("../fonts/#{$file}.eot");
+    src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/#{$file}.woff") format("woff"),
+    url("../fonts/#{$file}.ttf") format("truetype"),
+    url("../fonts/#{$file}.svg?#webfont") format("svg");
+  }
+}
+
+@mixin mQ($value1: $xs, $value2: null) {
+  @if $value2==null {
+    @media screen and (max-width: $value1 - 0.02) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $value1) and (max-width: $value2 - 0.02) {
+      @content;
+    }
+  }
+}

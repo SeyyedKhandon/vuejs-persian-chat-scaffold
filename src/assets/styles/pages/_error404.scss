@@ -1,0 +1,14 @@
+.error-404 {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--app-background-color);
+  @include position(fixed, 0, auto, auto, 0);
+  .text-error,
+  .text-link {
+    @include position(fixed, 50%, 0, auto, 0);
+    text-align: center;
+  }
+  .text-link {
+    margin-top: margin(3);
+  }
+}

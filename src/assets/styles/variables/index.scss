@@ -1,0 +1,22 @@
+@import "colors", "fonts", "template", "media_query";
+
+// main
+$default-margin: 20;
+$default-radius: 5;
+
+$z-indexes: (
+  header: 800,
+  overlay: 900,
+  content: 700,
+  footer: 800
+);
+
+$gradients: (
+  tag: linear-gradient(to top right, #4596fb, #57f2cc)
+);
+
+$shadows: (
+  box: 2px 2px 10px -4px rgba(0, 0, 0, 0.1),
+  avatar: 0 0 40px -4px rgba(0, 0, 0, 0.15),
+  tag: 3px 3px 7px -1px rgba(0, 0, 0, 0.1)
+);
