@@ -1,6 +1,6 @@
 <template>
   <aside class="app-drawer-container">
-    <div class="app-drawer">
+    <div class="app-drawer" v-click-outside="clickOutside">
       <h2>AppSidebar/Drawer</h2>
       <ul>
         <li class="add_group">
@@ -58,7 +58,8 @@ export default defineComponent({
   components: { ThemeSwitch, ChangeLanguage },
   setup(_props, context) {
     const { logout } = useLogin(context);
-    return { logout };
+    const clickOutside = () => context.emit("clickOutside");
+    return { logout, clickOutside };
   }
 });
 </script>

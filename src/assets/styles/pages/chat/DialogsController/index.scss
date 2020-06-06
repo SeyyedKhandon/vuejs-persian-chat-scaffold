@@ -1,0 +1,17 @@
+.app-dialogs-controller-container {
+  @include position(absolute, 0, auto, 0, auto);
+  .app-dialogs-controller {
+    display: flex;
+    flex-direction: column;
+    @include position(absolute, 0, auto, 0, auto);
+    @include box(310px, 100%);
+    border-left: 1px solid #e5e9f2;
+    border-right: 1px solid #e5e9f2;
+    //z-index: 12;
+    user-select: none;
+    box-sizing: border-box;
+    @import "DialogsControllerHeader";
+    @import "DialogsControllerTabs";
+    @import "DialogsControllerConversations";
+  }
+}

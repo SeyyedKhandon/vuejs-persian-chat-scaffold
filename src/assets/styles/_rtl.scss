@@ -1,6 +1,10 @@
 .rtl {
   text-align: right;
   direction: rtl;
+  .app-dialogs-controller {
+    //left: auto;
+    //right: 0;
+  }
   .app-drawer-container {
     .app-drawer {
       //left: auto;

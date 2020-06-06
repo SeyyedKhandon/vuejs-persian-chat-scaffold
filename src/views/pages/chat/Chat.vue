@@ -1,6 +1,6 @@
 <template>
   <div class="app-chat">
-    <Drawer v-if="showDrawer" />
+    <Drawer v-if="showDrawer" @clickOutside="showDrawer = false" />
     <DialogsController />
     <DialogContent />
     <ModalManager />
