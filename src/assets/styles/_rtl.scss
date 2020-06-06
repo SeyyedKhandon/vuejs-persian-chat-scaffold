@@ -1,4 +1,11 @@
 .rtl {
   text-align: right;
   direction: rtl;
+  .app-drawer-container {
+    .app-drawer {
+      //left: auto;
+      //right: -100px;
+      animation-name: slideIn-data-v-152a3808;
+    }
+  }
 }

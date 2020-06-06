@@ -6,10 +6,9 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
-import { useThemeInitialize } from "@/hooks/useApp";
+import { defineComponent, onMounted } from "@vue/composition-api";
+import { useApp } from "@/hooks/useApp";
 import { useLoading } from "@/hooks/useLoading";
-import { useAppVersionInfo } from "@/hooks/useAppVersion";
 import Loading from "@/views/components/Loading.vue";
 
 export default defineComponent({
@@ -17,10 +16,9 @@ export default defineComponent({
   components: {
     Loading
   },
-  setup() {
-    useThemeInitialize();
-    const { showVersion } = useAppVersionInfo();
-    showVersion();
+  setup(_props, context) {
+    const { initializeThemeAndLanguage } = useApp(context);
+    onMounted(initializeThemeAndLanguage);
     const { loadingState } = useLoading();
     return { loadingState };
   }
