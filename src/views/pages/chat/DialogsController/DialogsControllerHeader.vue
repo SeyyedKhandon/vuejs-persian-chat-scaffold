@@ -1,6 +1,6 @@
 <template>
   <div class="app-dialogs-controller-header">
-    dialog controller header
+    {{ $t("data.chat.dialogController.header") }}
   </div>
 </template>
 
@@ -11,4 +11,3 @@ export default defineComponent({
   name: "DialogsControllerHeader"
 });
 </script>
-

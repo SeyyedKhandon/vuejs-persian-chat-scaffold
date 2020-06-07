@@ -5,10 +5,11 @@ $default-margin: 20;
 $default-radius: 5;
 
 $z-indexes: (
-  header: 800,
-  overlay: 900,
-  content: 700,
-  footer: 800
+  normal: 0,
+  default: auto,
+  info: 10,
+  overlay: 20,
+  overlay-content: 30
 );
 
 $gradients: (

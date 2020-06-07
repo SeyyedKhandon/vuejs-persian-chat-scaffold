@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { i18n } from "@/hooks/locales/useLocale";
+import { i18n } from "@/views/components/langSwitch/useLocale";
 import "./plugin";
 import App from "./App.vue";
 import "./registerServiceWorker";

@@ -1,6 +1,6 @@
 <template>
   <div class="app-dialogs-controller-conversations">
-    dialog controller conversations
+    {{ $t("data.chat.dialogController.conversations") }}
   </div>
 </template>
 

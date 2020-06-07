@@ -1,6 +1,6 @@
 import AppLayout from "@/views/layout/AppLayout.vue";
 import { RoleAccessLevel } from "@/types/auth";
-import { i18n_t } from "@/hooks/locales/useLocale";
+import { i18n_t } from "@/views/components/langSwitch/useLocale";
 import { CustomRouteConfig } from "@/types/router";
 const innerRoutes = (): CustomRouteConfig => ({
   path: "/",

@@ -1,6 +1,5 @@
-import Login from "@/views/pages/Login.vue";
-import { i18n_t } from "@/hooks/locales/useLocale";
-import { RoleAccessLevel } from "@/types/auth";
+import Login from "@/views/pages/login/Login.vue";
+import { i18n_t } from "@/views/components/langSwitch/useLocale";
 
 const outerRoutes = () => [
   {

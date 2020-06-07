@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import appConfig from "./modules/appConfig";
 import appLoading from "./modules/loading";
+import appOverlays from "./modules/overlays";
 import apiErrorNotificationList from "./modules/axiosError";
 import authModule from "./modules/authModule";
 import createPersistedState from "vuex-persistedstate";
@@ -14,6 +15,7 @@ export default new Vuex.Store({
   modules: {
     appConfig,
     appLoading,
+    appOverlays,
     apiErrorNotificationList,
     authModule
   },

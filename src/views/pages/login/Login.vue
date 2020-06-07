@@ -38,12 +38,12 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { useLogin } from "@/hooks/accessControl/useLogin";
+import { useLogin } from "@/views/pages/login/useLogin";
 
 export default defineComponent({
   name: "Login",
-  setup(_props, context) {
-    const { state, login } = useLogin(context);
+  setup() {
+    const { state, login } = useLogin();
     return { state, login };
   }
 });

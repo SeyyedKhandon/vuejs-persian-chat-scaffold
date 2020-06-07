@@ -1,16 +1,14 @@
-.app-drawer-container {
-  @include position(absolute, 0, 0, 0, 0);
-  background: $bg-overlay;
-  z-index: z(overlay);
-  .app-drawer {
-    width: 320px;
-    @include position(absolute, 0, auto, 0, auto); //-320px);
-    background: var(--app-background-color);
-    display: flex;
-    flex-direction: column;
-    animation-delay: 0.05s;
-    animation-fill-mode: forwards;
-    animation-duration: 0.25s;
-    animation-name: slideInEn-data-v-152a3808;
+.app-drawer {
+  @include position(fixed, 0, 0, 0, 0);
+  //@include position(absolute, 0, auto, 0, auto); //-320px);
+  z-index: z(overlay-content);
+  width: $drawer-width;
+  background: var(--app-background-color);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-$drawer-width);
+  @include transition(transform);
+  &.drawer-active {
+    transform: translateX(0);
   }
 }

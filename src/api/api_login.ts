@@ -9,7 +9,7 @@ import { getEndPoints, origin } from "@/api/api_helper/EndPointHelper";
 import queryString from "query-string";
 import { rawPostService } from "@/api/api_helper/base_apis/raw_api";
 import { RoleAccessLevel } from "@/types/auth";
-import { i18n_t } from "@/hooks/locales/useLocale";
+import { i18n_t } from "@/views/components/langSwitch/useLocale";
 //
 // export const api_fetchOauthProviders = async () => {
 //   let oauth_providers = ((await getItem(

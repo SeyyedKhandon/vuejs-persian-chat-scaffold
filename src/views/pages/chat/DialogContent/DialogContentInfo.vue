@@ -1,13 +1,13 @@
 <template>
-  <div class="app-dialogs-controller-tabs">
-    {{ $t("data.chat.dialogController.tabs") }}
-  </div>
+  <aside class="app-dialog-content-info">
+    {{ $t("data.chat.dialogContent.info") }}
+  </aside>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
-  name: "DialogsControllerTabs"
+  name: "DialogContentInfo"
 });
 </script>

@@ -75,6 +75,33 @@
       "error403": {
         "title": "403 Forbidden Access"
       }
+    },
+    "chat": {
+      "drawer": {
+        "title": "Chat Drawer",
+        "newGroup": "New Group",
+        "newChannel": "New Channel",
+        "contacts": "Contacts",
+        "calls": "Calls",
+        "settings": "Settings",
+        "nightMode": "Night Mode",
+        "changeLang": "Change Language",
+        "logout": "Logout"
+      },
+      "dialogController": {
+        "header": "controller header",
+        "tabs": "dialog controller tabs",
+        "conversations": "conversation list"
+      },
+      "dialogContent": {
+        "header": "content header",
+        "messages": "messages",
+        "typeSection": "type section",
+        "info": "profile sidebar"
+      },
+      "modalManager": {
+        "title": "Modal manager"
+      }
     }
   }
 }

@@ -38,7 +38,7 @@
     },
     "defaultAPIErrorMessage": "یک خطای غیرمنتظره در شبکه رخ داده است.",
     "login": {
-      "title":"صفحه احراز هویت",
+      "title": "صفحه احراز هویت",
       "hint": "جهت ورود از رمزعبور و نام کاربری admin استفاده نمایید.",
       "username": "نام کاربری را وارد نمایید.",
       "password": "کلمه عبور را وارد نمایید.",
@@ -74,6 +74,33 @@
       },
       "error403": {
         "title": "دسترسی به صفحه مورد نظر امکان پذیر نیست."
+      }
+    },
+    "chat": {
+      "drawer": {
+        "title": "منوی کشویی",
+        "newGroup": "ایجاد گروه",
+        "newChannel": "ایجاد کانال",
+        "contacts": "مخاطبین",
+        "calls": "تماس ها",
+        "settings": "تنظیمات",
+        "nightMode": "حالت شب",
+        "changeLang": "تغییر زبان",
+        "logout": "خروج"
+      },
+      "dialogController": {
+        "header": "هدر کنترلر",
+        "tabs": "تب های چت",
+        "conversations": "لیست چت ها"
+      },
+      "dialogContent": {
+        "header": "هدر بخش درونی چت",
+        "messages": "پیام ها",
+        "typeSection": "بخش تایپ کردن",
+        "info": "اطلاعات پروفایل مخاطب"
+      },
+      "modalManager": {
+        "title": "بخش مدیریت مودال"
       }
     }
   }

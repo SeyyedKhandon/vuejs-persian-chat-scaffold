@@ -1,0 +1,14 @@
+.app-dialog-content-container {
+  padding-left: 310px;
+  padding-right: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  .app-dialog-content{
+    @import "DialogContentChat";
+    @import "DialogContentInfo";
+  }
+}

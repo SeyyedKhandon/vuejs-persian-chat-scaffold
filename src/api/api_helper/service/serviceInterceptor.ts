@@ -4,7 +4,7 @@ import { showErrorToast } from "@/hooks/useToastMessages";
 // import { api_logout } from "@/api/api_logout";
 import { AxiosError } from "axios";
 import { OAuthProvider, OAuthToken } from "@/types/auth";
-import { i18n } from "@/hooks/locales/useLocale";
+import { i18n } from "@/views/components/LangSwitch/useLocale";
 
 // Axios onRequestFulfilled
 export const onRequestFulfilled = (config: any) => {

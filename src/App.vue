@@ -7,9 +7,11 @@
 </template>
 <script lang="ts">
 import { defineComponent, onMounted } from "@vue/composition-api";
-import { useApp } from "@/hooks/useApp";
-import { useLoading } from "@/hooks/useLoading";
-import Loading from "@/views/components/Loading.vue";
+import { useLoading } from "@/views/components/loading/useLoading";
+import Loading from "@/views/components/loading/Loading.vue";
+import { useThemeManager } from "@/views/components/theme/useTheme";
+import { useLocale } from "@/views/components/langSwitch/useLocale";
+import { useAppVersionInfo } from "@/hooks/useAppVersion";
 
 export default defineComponent({
   name: "App",
@@ -17,8 +19,15 @@ export default defineComponent({
     Loading
   },
   setup(_props, context) {
-    const { initializeThemeAndLanguage } = useApp(context);
-    onMounted(initializeThemeAndLanguage);
+    const { loadTheme } = useThemeManager();
+    const { initializeLanguageAndRTLClass } = useLocale(context);
+    const { showVersion } = useAppVersionInfo();
+
+    onMounted(() => {
+      initializeLanguageAndRTLClass();
+      showVersion();
+      loadTheme();
+    });
     const { loadingState } = useLoading();
     return { loadingState };
   }

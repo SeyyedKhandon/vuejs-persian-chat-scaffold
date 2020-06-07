@@ -1,4 +1,4 @@
-import { i18n_t } from "./locales/useLocale";
+import { i18n_t } from "../views/components/LangSwitch/useLocale";
 import Swal, { SweetAlertIcon } from "sweetalert2";
 
 export const notSavedChangesAlert = (message = "") => {

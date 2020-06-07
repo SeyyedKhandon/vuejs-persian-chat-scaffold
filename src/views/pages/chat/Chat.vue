@@ -1,32 +1,32 @@
 <template>
   <div class="app-chat">
-    <Drawer v-if="showDrawer" @clickOutside="showDrawer = false" />
+    <Drawer />
     <DialogsController />
     <DialogContent />
     <ModalManager />
+    <Overlay />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, provide } from "@vue/composition-api";
-import Drawer from "@/views/pages/chat/Drawer.vue";
+import { defineComponent } from "@vue/composition-api";
+import Drawer from "@/views/pages/chat/Drawer/Drawer.vue";
 import DialogContent from "@/views/pages/chat/DialogContent/DialogContent.vue";
 import DialogsController from "@/views/pages/chat/DialogsController/DialogsController.vue";
-import ModalManager from "@/views/pages/chat/ModalManager.vue";
-import { useChat } from "@/hooks/chat/useChat";
+import ModalManager from "@/views/pages/chat/ModalManager/ModalManager.vue";
+import Overlay from "@/views/components/overlay/Overlay.vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "Chat",
   components: {
     Drawer,
     DialogContent,
     DialogsController,
-    ModalManager
+    ModalManager,
+    Overlay
   },
   setup() {
-    const { showDrawer, toggleDrawer } = useChat();
-    provide("drawerContext", { showDrawer, toggleDrawer });
-    return { showDrawer };
+    return {};
   }
 });
 </script>
