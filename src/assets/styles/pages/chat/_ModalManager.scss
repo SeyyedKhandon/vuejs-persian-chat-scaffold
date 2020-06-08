@@ -1,17 +1,15 @@
 .app-modal-manager {
-  @include position(fixed, 0, 0, 0, 0);
-  //@include position(absolute, 0, auto, 0, auto);
-  z-index: z(normal);
-  width: 0;
-  background: var(--app-background-color);
+  @include position(fixed, auto, 0, auto, 0);
+  width: $modal-width;
+  min-height: 350px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  margin: auto;
-  @include transition(opacity);
+  background: var(--app-background-color);
+  z-index: z(overlay-content);
+  transform: scale(1, 0);
+  @include transition(transform);
   &.modal-active {
-    width: $modal-width;
-    z-index: z(overlay-content);
-    opacity: 1;
+    transform: scale(1, 1);
   }
 }

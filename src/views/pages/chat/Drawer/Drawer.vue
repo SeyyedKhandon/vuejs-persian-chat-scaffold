@@ -22,7 +22,7 @@
       </li>
       <li class="setting">
         <span class="icon">STNG</span>
-        <button @click="openModal">show drawer</button>
+        <button @click="openModal">show modal</button>
         <span class="text">{{ $t("data.chat.drawer.settings") }}</span>
       </li>
       <li class="switch_night">
