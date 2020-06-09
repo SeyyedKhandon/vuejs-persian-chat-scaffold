@@ -1,5 +1,5 @@
 <template>
-  <div class="app-dialogs-controller">
+  <div class="app-dialog-controller">
     <button @click="openDrawer">show drawer</button>
     <DialogControllerHeader />
     <DialogControllerTabs />
