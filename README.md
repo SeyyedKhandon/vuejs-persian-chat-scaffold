@@ -9,7 +9,7 @@
 - [x] PWA
 - [x] Prettier base config
 - [x] Jest unit testing
-- [x] Specialized 7-1 pattern scss structure
+- [x] Customized 7-1 pattern scss structure
 - [x] Composition-api (inspired by React Hook best practices)
 - [x] Vue-router (using auth,role based guards based on enum)
 - [x] Base-Structure for Admin Templates
@@ -18,12 +18,17 @@
 - [x] `Special Project Conventions (this is a new idea/practice)`
 - [x] `API System` using axios
 - [x] ChangeLog
+- [x] License
 
 #####Todo:
 
 - [ ] MultiTheme using JSON
 - [ ] Theme customizer
 - [ ] Using simple icon pack
+- [ ] Mobile first
+- [ ] Storybook
+- [ ] Add PWA custom config to vue.config.js
+- [ ] Serve demo on github
 
 ## Project setup
 

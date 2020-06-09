@@ -1,5 +1,5 @@
 <template>
-  <div class="app-dialogs-controller-header">
+  <div class="app-dialog-controller-header">
     {{ $t("data.chat.dialogController.header") }}
   </div>
 </template>
@@ -8,6 +8,6 @@
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
-  name: "DialogsControllerHeader"
+  name: "DialogControllerHeader"
 });
 </script>

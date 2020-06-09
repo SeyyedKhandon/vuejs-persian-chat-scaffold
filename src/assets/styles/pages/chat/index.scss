@@ -1,4 +1,10 @@
+.app-chat {
+  height: 100%;
+  display: flex;
+}
 @import "../../components/Overlay";
-@import "DialogsController";
+@import "DialogController";
+@import "DialogContent";
+@import "DialogInfo";
 @import "Drawer";
 @import "ModalManager";

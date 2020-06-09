@@ -1,13 +1,13 @@
 <template>
-  <aside class="app-dialog-content-info">
-    {{ $t("data.chat.dialogContent.info") }}
-  </aside>
+  <section class="app-dialog-content-messages">
+    {{ $t("data.chat.dialogContent.messages") }}
+  </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
-  name: "DialogContentInfo"
+  name: "DialogContentMessages"
 });
 </script>

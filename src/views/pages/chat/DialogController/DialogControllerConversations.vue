@@ -1,5 +1,5 @@
 <template>
-  <div class="app-dialogs-controller-conversations">
+  <div class="app-dialog-controller-conversations">
     {{ $t("data.chat.dialogController.conversations") }}
   </div>
 </template>
@@ -8,6 +8,6 @@
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
-  name: "DialogsControllerConversations"
+  name: "DialogControllerConversations"
 });
 </script>

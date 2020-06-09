@@ -1,17 +1,13 @@
 <template>
-  <main class="app-layout">
-    <router-view />
-  </main>
+  <div class="app-dialog-controller-tabs">
+    {{ $t("data.chat.dialogController.tabs") }}
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
-  name: "AppLayout",
-  // components: {  },
-  setup() {
-    return {};
-  }
+  name: "DialogControllerTabs"
 });
 </script>

@@ -2,7 +2,7 @@
   <div>
     <h3>{{ $t("data.login.title") }}</h3>
     <p>{{ $t("data.login.hint") }}</p>
-    <form id="app" @submit.prevent="login">
+    <form @submit.prevent="login">
       <div v-if="state.errors.length">
         <b>{{ $t("data.login.errors.title") }}</b>
         <ul>

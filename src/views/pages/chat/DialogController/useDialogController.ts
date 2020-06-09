@@ -1,5 +1,5 @@
 import store from "@/store";
 
-export const useDialogsController = () => {
+export const useDialogController = () => {
   return {};
 };

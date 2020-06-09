@@ -1,8 +1,9 @@
 <template>
   <div class="app-chat">
     <Drawer />
-    <DialogsController />
+    <DialogController />
     <DialogContent />
+    <DialogInfo />
     <ModalManager />
     <Overlay />
   </div>
@@ -12,7 +13,8 @@
 import { defineComponent } from "@vue/composition-api";
 import Drawer from "@/views/pages/chat/Drawer/Drawer.vue";
 import DialogContent from "@/views/pages/chat/DialogContent/DialogContent.vue";
-import DialogsController from "@/views/pages/chat/DialogsController/DialogsController.vue";
+import DialogController from "@/views/pages/chat/DialogController/DialogController.vue";
+import DialogInfo from "@/views/pages/chat/DialogInfo/DialogInfo.vue";
 import ModalManager from "@/views/pages/chat/ModalManager/ModalManager.vue";
 import Overlay from "@/views/components/overlay/Overlay.vue";
 
@@ -21,7 +23,8 @@ export default defineComponent({
   components: {
     Drawer,
     DialogContent,
-    DialogsController,
+    DialogController,
+    DialogInfo,
     ModalManager,
     Overlay
   },
