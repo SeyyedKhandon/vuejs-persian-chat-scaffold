@@ -1,11 +1,9 @@
 .app-dialog-content {
-  padding-left: 310px;
-  padding-right: 0;
   height: 100%;
   overflow: hidden;
-  position: relative;
   transition: all 0.3s ease-in-out;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   @import "DialogContentHeader";
   @import "DialogContentMessages";

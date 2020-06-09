@@ -1,10 +1,10 @@
 <template>
-  <div class="app-dialog-controller">
+  <section class="app-dialog-controller">
     <button @click="openDrawer">show drawer</button>
     <DialogControllerHeader />
     <DialogControllerTabs />
     <DialogControllerConversations />
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

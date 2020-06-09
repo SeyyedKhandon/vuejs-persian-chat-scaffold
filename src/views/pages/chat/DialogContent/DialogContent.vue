@@ -1,9 +1,9 @@
 <template>
-  <article class="app-dialog-content">
+  <section class="app-dialog-content">
     <DialogContentHeader />
     <DialogContentMessages />
     <DialogContentTypeSection />
-  </article>
+  </section>
 </template>
 
 <script lang="ts">
