@@ -1,5 +1,5 @@
 // helpers
 
 export const useChat = () => {
-  return {  };
+  return {};
 };

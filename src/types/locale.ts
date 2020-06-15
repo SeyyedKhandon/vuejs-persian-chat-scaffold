@@ -13,4 +13,3 @@ export interface LocaleItemSpec {
   lang: string;
   rtl: false;
 }
-

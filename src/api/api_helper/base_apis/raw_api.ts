@@ -9,7 +9,7 @@ export const rawGetServiceWithoutDefaultBaseURL = async (
   base_url: string,
   url: string
 ) => {
-  let result = await rawService({
+  const result = await rawService({
     method: "get",
     baseURL: base_url,
     url,
@@ -18,7 +18,7 @@ export const rawGetServiceWithoutDefaultBaseURL = async (
   return result.data;
 };
 export const rawGetService = async (url: string) => {
-  let result = await rawService({
+  const result = await rawService({
     method: "get",
     baseURL: getEndPoints().hostUri,
     url,
@@ -28,7 +28,7 @@ export const rawGetService = async (url: string) => {
 };
 
 export const rawPostService = async (url: string, data: any) => {
-  let result = await rawService({
+  const result = await rawService({
     method: "post",
     baseURL: getEndPoints().hostUri,
     url,
