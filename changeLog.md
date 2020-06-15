@@ -9,6 +9,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Changed
 - Removed
 
+## [0.5.0] - 2020-06-15
+
+### Added
+
+- add storybook via using `vue add storybook`.
+  read more: https://github.com/storybookjs/storybook/issues/11117
+
+### Changed
+- using `~@` for addressing assets in `.scss` files. it works on both regular run vue and storybook, exmaple:
+  
+                  content: url("~@/assets/images/tick.svg");
+- using `@` for addressing assets in `.vue` files. it works on both regular run vue and storybook, exmaple:
+  
+                      <img
+                        class="loading_logo"
+                        src="@/assets/images/logo.png"
+                        alt="company logo"
+                      />
+
+
 ## [0.4.0] - 2020-06-07
 
 ### Added

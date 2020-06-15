@@ -1,12 +1,12 @@
 <template>
-  <div class="app-chat">
+  <article class="app-chat">
     <Drawer />
     <DialogController />
     <DialogContent />
     <DialogInfo />
     <ModalManager />
     <Overlay />
-  </div>
+  </article>
 </template>
 
 <script lang="ts">
