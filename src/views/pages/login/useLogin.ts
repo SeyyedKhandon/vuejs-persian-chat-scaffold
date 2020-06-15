@@ -1,10 +1,12 @@
-import { reactive, SetupContext } from "@vue/composition-api";
-import { i18n_t } from "@/hooks/locales/useLocale";
+import { reactive } from "@vue/composition-api";
+import { i18n_t } from "@/views/components/langSwitch/useLocale";
 import { isEmpty } from "ramda";
 import { api_fake_login } from "@/api/api_login";
 import { showErrorToast, showSuccessToast } from "@/hooks/useToastMessages";
 import { FakeLogin, RoleAccessLevel } from "@/types/auth";
 import store from "@/store";
+import router from "@/router";
+import { useOverlay } from "@/views/components/overlay/useOverlay";
 
 // helper
 function initialState() {
@@ -15,7 +17,7 @@ function initialState() {
   };
 }
 // main
-export const useLogin = (context: SetupContext) => {
+export const useLogin = () => {
   const state = reactive(initialState());
   const hasError = () => {
     state.errors = [];
@@ -34,7 +36,7 @@ export const useLogin = (context: SetupContext) => {
           showSuccessToast(JSON.stringify(res));
           store.commit("setFakeLogin", res);
           // console.log(router);
-          context.root.$router.push("/");
+          router.push("/");
         })
         .catch((err: { error: string }) => {
           showErrorToast(err.error);
@@ -46,7 +48,9 @@ export const useLogin = (context: SetupContext) => {
       role: RoleAccessLevel.Viewer,
       accessToken: ""
     });
-    context.root.$router.push("/login");
+    router.push("/login");
+    const { closeOverlays } = useOverlay();
+    closeOverlays();
   };
   return { state, login, logout };
 };

@@ -1,0 +1,13 @@
+.app-overlay {
+  @include position(absolute, 0, 0, 0, 0);
+  @include box(100%);
+  pointer-events: none;
+  opacity: 0;
+  background: black;
+  transition: opacity 0.3s;
+  &.overlay-active {
+    pointer-events: auto;
+    opacity: 0.7;
+    z-index: z(overlay);
+  }
+}

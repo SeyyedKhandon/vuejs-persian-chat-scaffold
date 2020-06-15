@@ -1,0 +1,12 @@
+.app-dialog-controller {
+  display: flex;
+  flex-direction: column;
+  @include box($drawer-width, 100%);
+  border-left: 1px solid $bg-primary;
+  border-right: 1px solid $bg-primary;
+  user-select: none;
+  box-sizing: border-box;
+  @import "DialogControllerHeader";
+  @import "DialogControllerTabs";
+  @import "DialogControllerConversations";
+}

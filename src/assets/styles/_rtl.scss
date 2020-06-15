@@ -1,4 +1,15 @@
 .rtl {
   text-align: right;
   direction: rtl;
+  .app-dialog-controller {
+    //left: auto;
+    //right: 0;
+  }
+  .app-drawer {
+    transform: translateX($drawer-width);
+    &.drawer-active {
+      transform: translateX(0);
+    }
+    animation-name: slideIn-data-v-152a3808;
+  }
 }

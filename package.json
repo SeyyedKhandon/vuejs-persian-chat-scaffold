@@ -1,6 +1,6 @@
 {
   "name": "chat_scaffold",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -21,6 +21,7 @@
     "secure-ls": "^1.2.6",
     "simple-browser-fingerprint": "^1.0.0",
     "sweetalert2": "^9.10.13",
+    "v-click-outside": "^3.0.1",
     "vue": "^2.6.11",
     "vue-i18n": "^8.17.6",
     "vue-multiselect": "^2.1.6",

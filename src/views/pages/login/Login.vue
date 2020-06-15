@@ -2,7 +2,7 @@
   <div>
     <h3>{{ $t("data.login.title") }}</h3>
     <p>{{ $t("data.login.hint") }}</p>
-    <form id="app" @submit.prevent="login">
+    <form @submit.prevent="login">
       <div v-if="state.errors.length">
         <b>{{ $t("data.login.errors.title") }}</b>
         <ul>
@@ -38,12 +38,12 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { useLogin } from "@/hooks/accessControl/useLogin";
+import { useLogin } from "@/views/pages/login/useLogin";
 
 export default defineComponent({
   name: "Login",
-  setup(_props, context) {
-    const { state, login } = useLogin(context);
+  setup() {
+    const { state, login } = useLogin();
     return { state, login };
   }
 });

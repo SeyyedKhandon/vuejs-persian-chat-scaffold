@@ -1,0 +1,13 @@
+.app-drawer {
+  @include position(fixed, 0, auto, 0, auto);
+  z-index: z(overlay-content);
+  width: $drawer-width;
+  transform: translateX(-$drawer-width);
+  background: var(--app-background-color);
+  display: flex;
+  flex-direction: column;
+  @include transition(transform);
+  &.drawer-active {
+    transform: translateX(0);
+  }
+}

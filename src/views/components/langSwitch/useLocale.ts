@@ -24,7 +24,11 @@ export const useLocale = (context: SetupContext) => {
   const updateLanguage = (title = "English") => {
     R.pipe(util.getLocaleLang, doStateSideEffects, doHTMLSideEffects)(title);
   };
+  const initializeLanguageAndRTLClass = () =>
+    updateLanguage(util.getLocaleTitle(store.getters.getLanguage));
+
   return {
+    initializeLanguageAndRTLClass,
     languageTitles,
     currentLangTitle,
     updateLanguage

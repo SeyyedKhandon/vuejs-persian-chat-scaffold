@@ -1,32 +1,33 @@
 <template>
   <div id="app" :key="$store.getters.getLanguage">
-    <ChangeLanguage />
-    <ThemeSwitch />
     <Loading v-if="loadingState" />
     <vue-snotify />
     <router-view />
   </div>
 </template>
 <script lang="ts">
-import ChangeLanguage from "@/views/components/ChangeLanguage.vue";
-import ThemeSwitch from "@/views/components/ThemeSwitch.vue";
-import Loading from "@/views/components/Loading.vue";
-import { defineComponent } from "@vue/composition-api";
-import { useThemeInitialize } from "@/hooks/useApp";
-import { useLoading } from "@/hooks/useLoading";
+import { defineComponent, onMounted } from "@vue/composition-api";
+import { useLoading } from "@/views/components/loading/useLoading";
+import Loading from "@/views/components/loading/Loading.vue";
+import { useThemeManager } from "@/views/components/theme/useTheme";
+import { useLocale } from "@/views/components/langSwitch/useLocale";
 import { useAppVersionInfo } from "@/hooks/useAppVersion";
 
 export default defineComponent({
   name: "App",
   components: {
-    ChangeLanguage,
-    ThemeSwitch,
     Loading
   },
-  setup() {
-    useThemeInitialize();
+  setup(_props, context) {
+    const { loadTheme } = useThemeManager();
+    const { initializeLanguageAndRTLClass } = useLocale(context);
     const { showVersion } = useAppVersionInfo();
-    showVersion();
+
+    onMounted(() => {
+      initializeLanguageAndRTLClass();
+      showVersion();
+      loadTheme();
+    });
     const { loadingState } = useLoading();
     return { loadingState };
   }
