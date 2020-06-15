@@ -19,6 +19,8 @@
 - [x] `API System` using axios
 - [x] ChangeLog
 - [x] License
+- [x] Storybook
+
 
 #####Todo:
 
@@ -26,7 +28,6 @@
 - [ ] Theme customizer
 - [ ] Using simple icon pack
 - [ ] Mobile first
-- [ ] Storybook
 - [ ] Add PWA custom config to vue.config.js
 - [ ] Serve demo on github
 
