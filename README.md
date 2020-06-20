@@ -30,6 +30,7 @@
 - [ ] Mobile first
 - [ ] Add PWA custom config to vue.config.js
 - [ ] Serve demo on github
+- [ ] Yarn
 
 ## Project setup
 
