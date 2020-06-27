@@ -15,6 +15,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
-/*@import "src/assets/styles/components/ThemeSwitch";*/
+<style lang="scss">
+@import "ThemeSwitch";
 </style>

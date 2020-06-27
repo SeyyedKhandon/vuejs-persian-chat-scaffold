@@ -11,3 +11,6 @@ export default defineComponent({
   name: "DialogContentHeader"
 });
 </script>
+<style lang="scss">
+@import "DialogContentHeader";
+</style>

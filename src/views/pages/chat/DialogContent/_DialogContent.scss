@@ -1,0 +1,11 @@
+.app-dialog-content {
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  //@import "src/views/pages/chat/DialogContent/DialogContentHeader";
+  //@import "src/views/pages/chat/DialogContent/DialogContentMessages";
+  //@import "src/views/pages/chat/DialogContent/DialogContentTypeSection";
+}

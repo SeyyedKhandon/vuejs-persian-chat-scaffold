@@ -11,7 +11,6 @@ const innerRoutes = (): CustomRouteConfig => ({
       name: "chat",
       component: () =>
         import(/* webpackChunkName: "about" */ "@/views/pages/chat/Chat.vue"),
-
       meta: {
         requiresAuth: true,
         requiredLevel: RoleAccessLevel.User,

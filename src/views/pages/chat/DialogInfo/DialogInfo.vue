@@ -11,3 +11,6 @@ export default defineComponent({
   name: "DialogInfo"
 });
 </script>
+<style lang="scss">
+@import "DialogInfo";
+</style>

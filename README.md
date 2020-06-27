@@ -20,6 +20,8 @@
 - [x] ChangeLog
 - [x] License
 - [x] Storybook
+- [x] Using Yarn instead of NPM
+- [x] Put SCSS next to their .vue files
 
 
 #####Todo:

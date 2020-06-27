@@ -22,5 +22,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-/*@import "src/assets/styles/components/Loading";*/
+@import "Loading";
 </style>

@@ -1,14 +1,21 @@
-import { RouteConfig } from "vue-router/types/router";
+import { RoleAccessLevel } from "@/types/auth";
+import { Component } from "vue";
 
-export interface CustomRouteConfig extends RouteConfig {
-  meta?: any | RouteMeta;
+export interface CustomRouteConfig {
+  path: string;
+  name?: string;
+  component: Component | Function;
+  meta?: RouteMeta;
+  children?: CustomRouteConfig[];
 }
 export interface RouteMeta {
   requiresAuth?: boolean;
-  requiredLevel?: boolean;
+  requiredLevel?: RoleAccessLevel;
   hidden?: boolean;
   breadcrumb?: RouteBreadcrumb[];
   pageTitle?: string;
+  icon: string;
+  title: string;
 }
 export interface RouteBreadcrumb {
   title?: string;

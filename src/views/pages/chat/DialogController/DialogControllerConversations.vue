@@ -11,3 +11,6 @@ export default defineComponent({
   name: "DialogControllerConversations"
 });
 </script>
+<style lang="scss">
+@import "DialogControllerConversations";
+</style>

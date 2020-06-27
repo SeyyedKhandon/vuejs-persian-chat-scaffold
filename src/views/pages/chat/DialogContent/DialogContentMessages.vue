@@ -11,3 +11,6 @@ export default defineComponent({
   name: "DialogContentMessages"
 });
 </script>
+<style lang="scss">
+@import "DialogContentMessages";
+</style>

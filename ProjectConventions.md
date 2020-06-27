@@ -49,4 +49,27 @@ you have
         Other:
             change none-direct-src files, like add configuration, plugins, structures,... 
 </pre>
+<strong>Addressing:</strong> 
+
+this patterns will work in storybook and vuejs together:
+ 
+```
+ <img
+      class="loading_logo"
+      src="@/assets/images/logo.png"
+      alt="company logo"
+    />  
+``` 
+
+```
+&::after {
+      width: 8px;
+      height: 100%;
+      content: url("~@/assets/images/tick.svg");
+      border-radius: 8px 0px 0px 8px;
+      position: absolute;
+      left: 18px;
+      top: 22px;
+    }
+```
 

@@ -11,3 +11,6 @@ export default defineComponent({
   name: "DialogControllerTabs"
 });
 </script>
+<style lang="scss">
+@import "DialogControllerTabs";
+</style>

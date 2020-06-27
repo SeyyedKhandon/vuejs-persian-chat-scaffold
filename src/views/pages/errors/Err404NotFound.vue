@@ -17,4 +17,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss">
+@import "error404";
+</style>

@@ -9,6 +9,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Changed
 - Removed
 
+
+## [0.6.0] - 2020-06-27
+
+### Changed
+
+- Using Yarn instead of NPM(so the package-lock.json has been removed).
+- Put SCSS files next to their .vue files, to make  better DX and more focus on Being CDD(component driven development)
+
+### Fixed
+
+- Fixed type error for routing types.
+
 ## [0.5.0] - 2020-06-15
 
 ### Added
